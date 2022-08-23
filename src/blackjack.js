@@ -307,7 +307,7 @@ function StayOrHit(stayOrHit){
 
     const showCard = (card) => {
         return(
-            <div className="carddd">
+            <div className="carddd col-md-6">
                 <p className="number">{card}</p>
                 <p className="number2">{card}</p>
             </div>  
@@ -318,17 +318,17 @@ function StayOrHit(stayOrHit){
 // the page  
 
 return (
-    <div>
+    <div className="container-fluid">
 
-        <div className='flex'> 
-            <div className="gambiarra">
+        <div className='row'> 
+            <div className="gambiarra col-lg-3">
                 <h1 className='red2'>{message}</h1>
                 <h1 className="blue2">Player Wins: {playerWins}</h1>
                 <h1 className="red">Dealer Wins: {dealerWins}</h1>
-                <div className='containerButton'>
-                    <button id="play" className='btn btn-success btn-lg' onClick={play}>Play</button>
-                    <button id="stay" className='btn btn-primary btn-lg mx-5' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
-                    <button id="hit" className='btn btn-danger btn-lg' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
+                <div className='containerButton row'>
+                    <button id="play" className='btn btn-success col-3' onClick={play}>Play</button>
+                    <button id="stay" className='btn btn-primary mx-5 col-3' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
+                    <button id="hit" className='btn btn-danger col-3' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
                 </div>
             </div>
 
@@ -340,9 +340,9 @@ return (
                     {/* <p>{totalDealerHand}</p> */}
                 </div>
 
-                    <div className="fldex">
-                        <h1 className='blue'>Player: <strong>{totalPlayerHand}</strong></h1>
-                        <p className="flex">{UplayerHand.map(showCard)}</p>
+                    <div className="container">
+                        <h1 className='blue row'>Player: <strong>{totalPlayerHand}</strong></h1>
+                        <p className="row">{UplayerHand.map(showCard)}</p>
                         {/* <p>{totalPlayerHand}</p> */}
                     </div>
 

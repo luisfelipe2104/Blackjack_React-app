@@ -332,7 +332,7 @@ return (
                 </div>
             </div>
 
-            <div className='containerrr'>
+            <div className='containerrr container'>
 
                 <div className="mb-5 row">
                     <h1 className='red'>Dealer:{gambiarra2}</h1>

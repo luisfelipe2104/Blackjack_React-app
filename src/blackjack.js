@@ -334,14 +334,14 @@ return (
 
             <div className='containerrr container'>
 
+                    <h1 className='red row'>Dealer:{gambiarra2}</h1>
                 <div className="mb-5 my-5 row justify-content-center">
-                    <h1 className='red'>Dealer:{gambiarra2}</h1>
                     <p className="row">{UdealerHand.map(showCard)}</p>
                     {/* <p>{totalDealerHand}</p> */}
                 </div>
 
-                    <div className="row justify-content-center my-5">
                         <h1 className='blue row'>Player: <strong>{totalPlayerHand}</strong></h1>
+                    <div className="row justify-content-center my-5">
                         <p className="row">{UplayerHand.map(showCard)}</p>
                         {/* <p>{totalPlayerHand}</p> */}
                     </div>

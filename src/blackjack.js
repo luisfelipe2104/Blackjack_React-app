@@ -325,10 +325,10 @@ return (
                 <h1 className='red2'>{message}</h1>
                 <h1 className="blue2">Player Wins: {playerWins}</h1>
                 <h1 className="red">Dealer Wins: {dealerWins}</h1>
-                <div className='containerButton row'>
-                    <button id="play" className='btn btn-success col-3' onClick={play}>Play</button>
-                    <button id="stay" className='btn btn-primary mx-5 col-3' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
-                    <button id="hit" className='btn btn-danger col-3' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
+                <div className='containerButton justify-content-center row'>
+                    <button id="play" className='btn btn-success h-25 col-2' onClick={play}>Play</button>
+                    <button id="stay" className='btn btn-primary mx-5 h-25 col-2' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
+                    <button id="hit" className='btn btn-danger h-25 col-2' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
                 </div>
             </div>
 

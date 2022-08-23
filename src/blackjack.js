@@ -321,7 +321,7 @@ return (
     <div className="container-fluid">
 
         <div className='row'> 
-            <div className="gambiarra col-3">
+            <div className="gambiarra col-md-3">
                 <h1 className='red2'>{message}</h1>
                 <h1 className="blue2">Player Wins: {playerWins}</h1>
                 <h1 className="red">Dealer Wins: {dealerWins}</h1>

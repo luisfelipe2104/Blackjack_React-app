@@ -307,7 +307,7 @@ function StayOrHit(stayOrHit){
 
     const showCard = (card) => {
         return(
-            <div className="carddd col-md-6 col-3 w-75 h-50">
+            <div className="carddd col-3 w-75 h-50">
                 <p className="number">{card}</p>
                 <p className="number2">{card}</p>
             </div>  
@@ -334,13 +334,13 @@ return (
 
             <div className='containerrr'>
 
-                <div className="mb-5">
+                <div className="mb-5 row">
                     <h1 className='red'>Dealer:{gambiarra2}</h1>
                     <p className="row">{UdealerHand.map(showCard)}</p>
                     {/* <p>{totalDealerHand}</p> */}
                 </div>
 
-                    <div className="">
+                    <div className="row">
                         <h1 className='blue row'>Player: <strong>{totalPlayerHand}</strong></h1>
                         <p className="row">{UplayerHand.map(showCard)}</p>
                         {/* <p>{totalPlayerHand}</p> */}

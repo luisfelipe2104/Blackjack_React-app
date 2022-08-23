@@ -307,7 +307,7 @@ function StayOrHit(stayOrHit){
 
     const showCard = (card) => {
         return(
-            <div className="carddd col-3 w-75 h-50">
+            <div className="carddd col-3 w-100 h-50">
                 <p className="number">{card}</p>
                 <p className="number2">{card}</p>
             </div>  

@@ -123,7 +123,11 @@ function total(turn){
 function checkWinner(){ 
     // alert("ola")
     updateNumber()
-    if(total(playerHand) == 21){
+    if(total(playerHand) == total(dealerHand)){
+        setMessage("Tie!")
+    }
+
+    else if(total(playerHand) == 21){
         setMessage("Blackjack! You win!")
         setPlayerWins(playerWins + 1)
     }
@@ -154,9 +158,6 @@ function checkWinner(){
         setPlayerWins(playerWins + 1)
     }
 
-    else if(total(playerHand) == total(dealerHand)){
-        setMessage("Tie!")
-    }
 }
 
 // -----------------------------------------------------------------------------------------
@@ -325,10 +326,10 @@ return (
                 <h1 className='red2'>{message}</h1>
                 <h1 className="blue2">Player Wins: {playerWins}</h1>
                 <h1 className="red">Dealer Wins: {dealerWins}</h1>
-                <div className='containerButton justify-content-center row'>
-                    <button id="play" className='btn btn-success h-25 col-2' onClick={play}>Play</button>
-                    <button id="stay" className='btn btn-primary mx-5 h-25 col-2' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
-                    <button id="hit" className='btn btn-danger h-25 col-2' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
+                <div className='containerButton h-100 row align-items-center justify-content-center'>
+                    <button id="play" className='btn btn-success h-25 col-2 mb-auto mt-auto' onClick={play}>Play</button>
+                    <button id="stay" className='btn btn-primary mx-5 h-25 col-2 mb-auto mt-auto' value="1" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Stay</button>
+                    <button id="hit" className='btn btn-danger h-25 col-2 mb-auto mt-auto' value="2" onClick={ (e) => {StayOrHit(e.target.value); updateNumber() }}>Hit</button>
                 </div>
             </div>
 

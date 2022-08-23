@@ -43,7 +43,9 @@ body{
 .containerButton{
   margin-left: 25px;
   padding: 10px;
-  height: 200px;
+  min-height: 200px;
+  max-height: 200px;
+  border: 1px solid white;
   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../src/img/madeira.jpg);
   background-position: center;
   background-size: cover;
@@ -75,5 +77,5 @@ body{
 .gambiarra{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
